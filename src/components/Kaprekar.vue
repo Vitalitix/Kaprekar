@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-const props = defineProps<{ msg: string }>();
+defineProps<{ msg: string }>();
 const inputNumber = ref<number | null>(null);
 const errorMessage = ref<string | null>(null);
 const stepsList = ref<{ value: number, formula: string }[]>([]);
